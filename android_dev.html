@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Development</title>
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <style>
+        .next-icon {
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            border-color: transparent;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--third-color);
+            font-size: 50px;
+        }
+
+        .next-icon:hover {
+            color: var(--first-color);
+        }
+
+        h2 {
+            color: var(--text-color-second);
+        }
+
+        h3 {
+            margin-top: 15px;
+            margin-bottom: 2px;
+        }
+
+        p, ul, li {
+            color: var(--text-color-second);
+        }
+
+        .child {
+            min-width: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Umer</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <!-- Add your navigation links here -->
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="index.html#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="index.html#projects" class="nav-link active-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="index.html#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Back button to go back to index.html -->
+            <div class="nav-button">
+                <a href="index.html" class="btn">Back</a>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="wrapper">
+            <!-- Header -->
+            <div style="height: 80px;"></div>
+            <div class="top-header">
+                <h2>Android Development Projects</h2>
+            </div>
+            <!-- Horizontal Scrolling Images -->
+            <div class="main-scroll-div">
+                <div class="next-div">
+                    <button class="next-icon" onclick="scrollr()">&lt;</button>
+                </div>
+                <div class="cover">
+                    <div class="scroll-images">
+                        <div class="child"><img class="child-img" src="assets/images/android_dev/1.png" alt="image"
+                                loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/android_dev/2.png" alt="image"
+                                loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/android_dev/3.png" alt="image"
+                                loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/android_dev/4.png" alt="image"
+                                loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/android_dev/5.png" alt="image"
+                                loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/android_dev/6.png" alt="image"
+                                loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/android_dev/7.png" alt="image"
+                                loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/android_dev/8.png" alt="image"
+                                loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/android_dev/9.png" alt="image"
+                                loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/android_dev/10.png" alt="image"
+                                loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/android_dev/11.png" alt="image"
+                                loading="lazy"></div>
+                    </div>
+                </div>
+
+                <div class="next-div">
+                    <button class="next-icon" onclick="scrolll()">&gt;</button>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <section class="section">
+                <div class="project-description">
+                    <h2>Grocery Shopping App</h2>
+                    <p>For my latest project, I developed a grocery shopping mobile application using Flutter framework
+                        for Android platform. This app provides users with the ability to browse and purchase groceries,
+                        while offering admin functionalities for managing inventory, orders, and user accounts. The app
+                        is powered by Firebase backend, ensuring real-time data synchronization and seamless user
+                        experience.</p>
+
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>Product Catalog: Displayed a wide range of grocery items categorized into various sections
+                            for easy navigation and selection.</li>
+                        <li>Search Functionality: Implemented a search feature allowing users to quickly find specific
+                            products based on keywords or categories.</li>
+                        <li>User Authentication: Enabled user registration and login functionalities with Firebase
+                            Authentication, ensuring secure access to the app's features.</li>
+                        <li>Shopping Cart: Integrated a shopping cart system where users can add, remove, and update
+                            items before proceeding to checkout.</li>
+                        <li>Order Management: Provided admin dashboard for managing incoming orders, updating order
+                            statuses, and tracking order history.</li>
+                        <li>Inventory Management: Empowered admins to manage product inventory, including adding new
+                            products, updating quantities, and setting price points.</li>
+                        <li>Push Notifications: Implemented push notification feature to notify users about order
+                            updates, promotions, and new arrivals.</li>
+                    </ul>
+
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                        <li>Flutter Framework</li>
+                        <li>Dart Programming Language</li>
+                        <li>Firebase (Firestore, Authentication)</li>
+                        <li>Provider State Management</li>
+                        <li>HTTP Package for REST API Integration</li>
+                        <li>Google Cloud Functions for Backend Logic</li>
+                    </ul>
+
+                    <h3>Challenges Faced:</h3>
+                    <ul>
+                        <li>Real-Time Data Synchronization: Implementing efficient data synchronization between the
+                            mobile app and Firebase backend to maintain data integrity and consistency.</li>
+                        <li>User Experience Design: Designing an intuitive and responsive user interface that promotes
+                            ease of navigation, product discovery, and checkout process.</li>
+                        <li>Security Considerations: Addressing security concerns related to user authentication, data
+                            privacy, and secure payment transactions.</li>
+                    </ul>
+
+                    <h3>Achievements:</h3>
+                    <ul>
+                        <li>Successful Deployment: Launched the grocery shopping app on the Google Play Store, garnering
+                            positive reviews and feedback from users for its user-friendly interface and seamless
+                            shopping experience.</li>
+                        <li>Increased User Engagement: Achieved high user engagement metrics with active user base and
+                            frequent app usage, indicating positive reception and satisfaction among users.</li>
+                        <li>Streamlined Operations: Facilitated efficient inventory management, order processing, and
+                            customer communication for grocery store owners, leading to improved business operations and
+                            customer satisfaction.</li>
+                    </ul>
+
+                    <p>The development of the grocery shopping app was an exciting journey that allowed me to leverage
+                        the power of Flutter and Firebase to deliver a robust and feature-rich solution for both users
+                        and admins. It stands as a testament to my expertise in mobile app development and my commitment
+                        to delivering innovative solutions that meet the evolving needs of modern consumers and
+                        businesses.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="top-footer">
+                <p>Muhammad Umer Ghaus</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="index.html#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="index.html#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <a href="https://www.linkedin.com/in/umerghaus" target="_blank" class="icon"><i
+                        class="uil uil-linkedin-alt"></i></a>
+                <a href="https://github.com/UmerGhaus" target="_blank" class="icon"><i
+                        class="uil uil-github-alt"></i></a>
+                <a href="https://www.youtube.com/@codeinfinity2447" target="_blank" class="icon"><i
+                        class="uil uil-youtube"></i></a>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" class="bottom-footer-name">Muhammad Umer Ghaus</a> - All rights
+                    reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

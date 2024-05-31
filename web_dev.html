@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+     <!-- --------- FAVICON ---------- -->
+     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <style>
+        .next-icon {
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            border-color: transparent;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--third-color);
+            font-size: 50px;
+        }
+
+        .next-icon:hover {
+            color: var(--first-color);
+        }
+        h2{
+            color: var(--text-color-second);
+        }
+        h3{
+            margin-top: 15px;
+            margin-bottom: 2px;
+        }
+        p, ul, li {
+            color: var(--text-color-second);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Umer</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <!-- Add your navigation links here -->
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="index.html#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="index.html#projects" class="nav-link active-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="index.html#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Back button to go back to index.html -->
+            <div class="nav-button">
+                <a href="index.html" class="btn">Back</a>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="wrapper">
+            <!-- Header -->
+            <div style="height: 80px;"></div>
+            <div class="top-header">
+                <h2>Web Development Projects</h2>
+            </div>
+            <!-- Horizontal Scrolling Images -->
+            <div class="main-scroll-div">
+                <div class="next-div">
+                    <button class="next-icon" onclick="scrollr()"> &lt</button>
+                </div>
+                <div class="cover">
+                    <div class="scroll-images">
+                        <div class="child"><img class="child-img" src="assets/images/web_dev/1.png" alt="image" loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/web_dev/2.png" alt="image" loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/web_dev/3.png" alt="image" loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/web_dev/4.png" alt="image" loading="lazy"></div>
+                        <div class="child"><img class="child-img" src="assets/images/web_dev/5.png" alt="image" loading="lazy"></div>
+                    </div>
+                </div>
+                
+                <div class="next-div">
+                    <button class="next-icon" onclick="scrolll()"> &gt;</button>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <section class="section">
+                <div class="project-description">
+                    <h2>Portfolio Redesign</h2>
+                    <p>For my latest project, I embarked on a journey to redesign my personal portfolio website. This endeavor allowed me to showcase my skills as a web developer while also improving the overall user experience and aesthetics of my online presence.</p>
+                    
+                    <h3>Key Objectives:</h3>
+                    <ul>
+                        <li>Enhance Visual Appeal: I aimed to create a visually stunning and modern design that reflects my personality and professionalism.</li>
+                        <li>Improve User Navigation: I focused on optimizing the navigation flow, ensuring seamless access to various sections of the website.</li>
+                        <li>Showcase Skills: I utilized creative layouts and interactive elements to highlight my technical skills, projects, and achievements.</li>
+                        <li>Mobile Responsiveness: With the increasing use of mobile devices, I prioritized mobile responsiveness to ensure a consistent and enjoyable experience across all screen sizes.</li>
+                        <li>Performance Optimization: Implementing best practices in web development, I optimized the website for fast loading times and smooth performance.</li>
+                    </ul>
+                    
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3 (including Flexbox and Grid)</li>
+                        <li>JavaScript (for interactivity and animations)</li>
+                        <li>Responsive Design Principles</li>
+                        <li>Bootstrap Framework</li>
+                    </ul>
+                    
+                    <h3>Challenges Faced:</h3>
+                    <ul>
+                        <li>Design Iterations: Finding the perfect balance between creativity and functionality required multiple design iterations and feedback sessions.</li>
+                        <li>Cross-Browser Compatibility: Ensuring consistent rendering across different browsers posed some challenges, especially with CSS styling.</li>
+                        <li>Performance Tweaks: Optimizing images, scripts, and code structure to achieve optimal performance without compromising on design.</li>
+                        <li>Content Organization: Striking the right balance between showcasing my work and providing relevant information about myself in a concise manner.</li>
+                    </ul>
+                    
+                    <h3>Achievements:</h3>
+                    <ul>
+                        <li>Successfully launched the redesigned portfolio, receiving positive feedback from peers and potential clients.</li>
+                        <li>Improved user engagement metrics such as bounce rate and time spent on the website.</li>
+                        <li>Enhanced brand image and professionalism, leading to increased inquiries and job opportunities.</li>
+                    </ul>
+                    
+                    <p>The portfolio redesign project was not only an opportunity to demonstrate my technical skills but also a journey of self-improvement and creative expression. It stands as a testament to my dedication to continuous learning and growth as a web developer.</p>
+                </div>
+            </section>
+            
+            
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="top-footer">
+                <p>Muhammad Umer Ghaus</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="index.html#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="index.html#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <a href="https://www.linkedin.com/in/umerghaus" target="_blank" class="icon"><i
+                        class="uil uil-linkedin-alt"></i></a>
+                <a href="https://github.com/UmerGhaus" target="_blank" class="icon"><i
+                        class="uil uil-github-alt"></i></a>
+                <a href="https://www.youtube.com/@codeinfinity2447" target="_blank" class="icon"><i
+                        class="uil uil-youtube"></i></a>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" class="bottom-footer-name">Muhammad Umer Ghaus</a> - All rights
+                    reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
